@@ -5,3 +5,7 @@ h = 2
 # for y in range(h):
 # print(x, y)
 # for x in range(w):
+
+for y in range(h):
+    for x in range(w):
+        print(x, y)
