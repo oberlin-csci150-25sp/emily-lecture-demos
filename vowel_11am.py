@@ -1,5 +1,5 @@
 # functions lecture
-# clicker question 12.2
+# clicker question 12.0
 
 # TODO: Let's make a set of tests!
 def testVowel():
