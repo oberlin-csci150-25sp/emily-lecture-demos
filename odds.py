@@ -1,5 +1,5 @@
 # functions lecture
-# clicker question 12.1
+# clicker question 12.3
 
 def isOdd(num):
     remainder = num % 2
@@ -16,7 +16,7 @@ def largeOdd(num):
     else:
         return isOdd(num)
 
-a = largeOdd(97)
-b = findOdds(5)
-c = isOdd(2)
+a = largeOdd(97) # None (blank/empty output)
+b = findOdds(5) # two lines: 1 is odd [newline] 3 is odd
+c = isOdd(2) # False
 print(a, b, c)
