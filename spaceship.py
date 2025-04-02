@@ -24,9 +24,10 @@ class Spaceship:
         s = "The speed is: " + str(self.getSpeed())
         return s
     
-    def __lt__(???):
-        '''overrides less than operator'''
-        return ??? 
+    # continue next time!
+    # def __lt__(???):
+    #     '''overrides less than operator'''
+    #     return ??? 
 
 def main():
     # Create instances
