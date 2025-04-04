@@ -18,7 +18,7 @@ def random_encounter(player):
 def main():
     # Activity: 24.1 Creating Player Ship
     player_name = input("Welcome to the spaceship simulator! Name your ship: ")
-    # player_ship = ???
+    player_ship = spaceship.Spaceship(player_name)
 
     # Activity: Choices in Games
     done = False 
@@ -35,9 +35,15 @@ def main():
         select = input("Choice: ")
         
         if select == "1":
-            print("(1) TODO - show current speed")
+            # print("(1) TODO - show current speed")
+            # get the speed of the spaceship 
+            print(player_ship.getSpeed())
         elif select == "2":
-            print("(2) TODO - boost speed")
+            # print("(2) TODO - boost speed")
+            # boost by a set or inputted number?
+            newSpeed = player_ship.getSpeed() + 21
+            player_ship.setSpeed(newSpeed)
+            print("The new speed is now", player_ship.getSpeed())
         elif select == "3":
             print("(3) TODO - random_encounter")
             # random_encounter(player_ship) # TODO
