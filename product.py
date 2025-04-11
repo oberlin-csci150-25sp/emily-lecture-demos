@@ -1,7 +1,10 @@
 class Product:
+  quantity = 0  
+
   def __init__(self, n, p):
     self.name = n 		# name as string 
     self.price = p 	  # dollars as float
+    Product.quantity += 1
 
   def get_name(self):
     return self.name
@@ -12,6 +15,9 @@ class Product:
   def set_price(self, new_p):
     self.price = new_p
     return
+
+  def get_quantity(): 
+    return Product.quantity
 
 class Tea(Product):
   def __init__(self, n, p, c):
@@ -42,6 +48,8 @@ class Cookie(Product):
     return self.allergen
   
 def main():
+  print("quantity", Product.get_quantity()) # 0
+
   # make test instances of each specific product
   # show price
   pbcookie = Cookie("peanut butter cookie", 3, 50, "peanuts")
@@ -53,6 +61,8 @@ def main():
   earlgrey = Tea("earl grey", 4, "high")
   eg_price = earlgrey.get_price()
   print(eg_price)
+
+  print("quantity", Product.get_quantity()) # 3
 
 if __name__ == "__main__":
   main() 
