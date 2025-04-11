@@ -40,3 +40,19 @@ class Cookie(Product):
   
   def show_allergen(self):
     return self.allergen
+  
+def main():
+  # make test instances of each specific product
+  # show price
+  pbcookie = Cookie("peanut butter cookie", 3, 50, "peanuts")
+  print(pbcookie.get_price())
+
+  apple = Fruit("apple", 1, 20)
+  print(apple.get_price())
+
+  earlgrey = Tea("earl grey", 4, "high")
+  eg_price = earlgrey.get_price()
+  print(eg_price)
+
+if __name__ == "__main__":
+  main() 
