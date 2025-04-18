@@ -30,6 +30,15 @@ return letter of s + reverse of the rest of s
 """
 
 def rev(s):
-  # base case
-  # not base case
-  pass
+  print(s)
+  if len(s) == 1:
+    return s
+  # return s[-1] + rev(s[:-1])
+  return rev(s[1:]) + s[0]
+
+def main():
+  print(rev("hello"))
+  print(rev("racecar"))
+  print(rev("e"))
+
+main()
