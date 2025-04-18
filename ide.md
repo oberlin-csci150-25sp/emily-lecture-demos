@@ -19,3 +19,11 @@
 - Test commit and sync
 - Proceed with care
 - Remember to pull/rebase from your online work if you switch between platforms
+
+# graphics support
+- https://stackoverflow.com/questions/68439152/how-to-install-pil-with-pip 
+(install pip if you have not yet)
+$ pip install pillow --upgrade
+$ python3 verygreen.py
+
+- https://docs.activestate.com/platform/ide_integrations/vscode/ (see "To access the “Select Interpreter” drop-down from the Command Palette...")
