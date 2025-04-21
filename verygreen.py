@@ -6,7 +6,9 @@ def circles(x, y, radius):
     '''
 
     # TODO base case
-    # ???
+    if radius < 10:
+      # draw filled circle at x, y
+      pass
     
     # starter code for changing color and drawing filled circle at current values
     picture.set_fill_color(0, radius % 255, 0)
@@ -14,8 +16,8 @@ def circles(x, y, radius):
     picture.draw_filled_circle(x, y, radius)
 
     # TODO recursive call
-    # ???
-    pass
+    # draw filled circle at x, y
+    circles(x, y, radius - 3)
 
 def main():
   # set up a new canvas
@@ -29,11 +31,14 @@ def main():
   # outline color (same for all circles)
   picture.set_outline_color('green')
 
-  # one test circle before we try recursion!
-  # picture.set_fill_color(0, 255, 0)
-  # picture.draw_filled_circle(x_center, y_center, dim // 3)
+  # TODO: one test circle before we try recursion!
+  picture.set_fill_color(0, 255, 0)
+  picture.draw_filled_circle(x_center, y_center, dim // 3)
 
-  circles(x_center, y_center, dim // 3)
+  # circles(x_center, y_center, dim // 3)
 
   # save picture (show in different tab of codespace)
   picture.save_picture("verygreen.png")
+
+if __name__ == "__main__":
+  main()
